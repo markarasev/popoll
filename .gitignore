@@ -1,0 +1,7 @@
+# Build files
+target
+
+# IDE related files
+## IntelliJ
+.idea
+popoll.iml
