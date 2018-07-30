@@ -1,12 +1,21 @@
 package popoll
 
+import java.util.UUID
+
 import markarasev.utils.{NonEmptySeq, UtcDateTime}
 
 case class DatePoll(
+  id: DatePollId,
   title: Title,
   description: Description,
   alternatives: NonEmptySeq[Alternative],
 )
+
+case class DatePollId(u: UUID) extends AnyVal
+
+object DatePollId {
+  def apply: DatePollId = new DatePollId(UUID.randomUUID())
+}
 
 case class Title(u: String) extends AnyVal
 

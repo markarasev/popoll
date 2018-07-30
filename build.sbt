@@ -1,3 +1,5 @@
+scalaVersion := "2.12.4"
+
 resolvers +=
   "Artifactory" at "http://virgo.fun:8081/artifactory/sbt-repo-local/"
 
